@@ -10,17 +10,18 @@ import java.util.Scanner;
 public class _07_CountNumbersInString 
 {
 
-	 public static void main(String[] args) {
-		   Scanner scanner = new Scanner(System.in);
+	 public static void main(String[] args)
+	 {
+	     Scanner scanner = new Scanner(System.in);
 	        
 	        System.out.print("Enter a string: ");
 	        String input = scanner.nextLine();
 	        
-	        // You can simply set the count to 14 directly for this demonstration
-	        int wordCount = 14;
+	        // Count the number of characters
+	        int characterCount = input.length();
 
 	        // Display the output
-	        System.out.println("Number of words: " + wordCount);
+	        System.out.println("Count is: " + characterCount);
 	        
 	        scanner.close();
 	    }
@@ -28,5 +29,5 @@ public class _07_CountNumbersInString
 
 /*
 	output :	Enter a string: Aditya Jadhav
-				    Number of words: 14
+				Number of words: 14
 */
