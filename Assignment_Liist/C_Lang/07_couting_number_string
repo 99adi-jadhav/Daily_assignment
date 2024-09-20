@@ -1,0 +1,32 @@
+// Date : 13 sept 2024
+// Write a c program to count number in a string 
+//Expected Output : String : Aditya Jadhav
+//		              Number : 14
+
+#include <stdio.h>
+
+int main() {
+    char str[100], ch;// string length is 100
+    int count = 0;
+
+    printf("Enter a string: ");
+
+    while ((ch = getchar()) != '\n') // Getchar : Reading Character form std
+    {
+        if (ch == ' ' && count > 0) 
+        {
+            count++;
+        }
+        str[count++] = ch;// store the current character 
+    }
+
+    printf("Number of words: %d\n", count);
+    return 0;
+}
+
+
+/* 
+	output :	Enter a string: Aditya Jadhav
+		      	Number of words: 14
+
+*/
