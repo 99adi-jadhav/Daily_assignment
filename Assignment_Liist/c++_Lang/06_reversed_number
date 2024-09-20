@@ -1,0 +1,32 @@
+// Date : 12 sept 2024
+// Write a c++ program to reversed the given number
+//Expected Output : 45321
+
+#include <iostream>
+
+using namespace std;
+
+int main() 
+{
+    int num = 12354;
+    int reversed = 0;
+
+    cout << "\n The Number is : " << num << endl;
+
+    while (num != 0) {
+        int digit = num % 10; // to last digit
+        reversed = reversed * 10 + digit; // to reversed number
+        num /= 10; // to remove the last digit
+    }
+
+    cout << "\n Reversed number is : " << reversed << endl;
+
+    return 0;
+}
+
+/*
+	output :	The Number is : 12354
+ 			Reversed number is : 45321
+
+
+*/
