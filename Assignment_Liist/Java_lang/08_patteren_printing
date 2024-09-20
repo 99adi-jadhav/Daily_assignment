@@ -1,0 +1,49 @@
+/*
+Date : 14 sept 2024
+Write a java program print this pattern
+Expected Output : 	***
+              			**
+              			*
+              			**
+              			*
+*/
+
+
+package com.adi.DailyAssignment;
+
+public class _08_pattern_printing
+{
+
+	public static void main(String[] args)
+	{
+		
+
+	    for (int i = 3; i > 0; i--) {
+            for (int j = 0; j < i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+        // Print the second half of the pattern
+        for (int i = 2; i > 0; i--) {
+            for (int j = 0; j < i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+	
+}
+
+
+/*
+    output :
+	***
+	**
+	*
+	**
+	*
+
+
+*/
