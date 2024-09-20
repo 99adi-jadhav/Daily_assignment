@@ -1,0 +1,32 @@
+// Date : 12 sept 2024
+// Write a java program to reversed the given number
+//Expected Output : 45321
+
+package com.adi.DailyAssignment;
+
+public class _06_Reversed_Number 
+{
+
+	public static void main(String[] args) 
+	{
+		int num = 12354;
+        int reversed = 0;
+
+        System.out.println("The Number is: " + num);
+
+        while (num != 0) {
+            int digit = num % 10; // to last digit
+            reversed = reversed * 10 + digit; // to reversed number
+            num /= 10; // to remove the last digit
+        }
+
+        System.out.println("Reversed number is: " + reversed);
+	}
+
+}
+
+
+/*
+output :	The Number is : 12354
+			Reversed number is : 45321
+*/
