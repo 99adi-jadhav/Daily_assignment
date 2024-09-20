@@ -23,3 +23,11 @@ public class _01Count_space {
         System.out.println("The Space Count is : " + count);// Printing Statement
     }
 }
+
+
+/* 
+Output :
+		
+The Space Count is : 7
+
+*/
