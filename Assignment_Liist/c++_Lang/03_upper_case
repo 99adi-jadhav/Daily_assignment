@@ -1,0 +1,38 @@
+/*
+  Date : 11 sept 2024
+  Write a c++ program lowercase convert into uppercase
+  Expected Output :     Original sentence: chatrapati shivaji maharaj 
+			Uppercase sentence: CHATRAPATI SHIVAJI MAHARAJ 
+
+  			
+*/
+
+#include <iostream>
+#include <cctype>
+#include <string>
+
+using namespace std;
+
+int main() {
+    string str = "chatrapati shivaji maharaj";
+
+    cout << "\nOriginal sentence: " << str << "\n\n";
+
+    for (char& c : str) {
+        c = toupper(c);
+    }
+
+    cout << "Uppercase sentence: " << str << "\n\n";
+
+    return 0;
+}
+
+
+
+/*
+	Output :
+			Original sentence: chatrapati shivaji maharaj 
+
+
+			Uppercase sentence: CHATRAPATI SHIVAJI MAHARAJ 
+*/
