@@ -1,0 +1,41 @@
+/*
+ Date : 15 sept 2024
+Write a c program print this pattern
+Expected Output : 	11
+              			  22
+              			    33
+              			      44
+              				      55
+
+*/
+
+package com.adi.DailyAssignment;
+
+public class _09_pattern_matching_02 
+{
+
+	public static void main(String[] args) 
+	{
+		
+	       int num = 5;
+
+	       for (int i = 1; i <= num; i++) 
+	        {
+	            for (int j = 1; j < i; j++)
+	            {
+	                System.out.print(" "); 
+	            }
+
+	            System.out.println(i + "" + i); 
+	        }
+	 }
+}
+
+
+/*
+	output :	11
+			        22
+			          33
+			            44
+			            	55
+*/
