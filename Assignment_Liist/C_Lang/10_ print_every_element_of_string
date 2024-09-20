@@ -1,0 +1,42 @@
+/*
+  Date : 16 sept 2024
+  Write a c program to print every element of string 
+  Expectedoutput : Enter String: Bharat 
+                          				B 
+                          				h 
+                          				a 
+                          				r 
+                          				a 
+                          				t 
+  			
+*/
+
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    char sentence[100];
+
+    printf("Enter String: ");
+    scanf("%s", sentence); 
+
+
+    for (int i = 0; i < strlen(sentence); i++)//  it is use to length and prints each character on a new line.
+     {
+        printf("%c \n", sentence[i]);
+    }
+
+    return 0;
+}
+
+
+/*
+	output : Enter String: Bharat 
+                  				B 
+                  				h 
+                  				a 
+                  				r 
+                  				a 
+                  				t 
+*/
