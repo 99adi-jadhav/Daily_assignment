@@ -1,0 +1,34 @@
+// Date : 9 sept 2024
+// Write a c++ program to count spaces of a string  
+//Expected Output : space is 7
+
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int count = 0;
+    char ch[] = "Hello sir,I Am A MSC Computer Science Student";
+    
+    for (int num = 0; ch[num] != '\0'; num++) // it starting from 0 mean H ===> character string is not equal to ( \0 ===> stop when it come in end of String)s
+    {
+        if (ch[num] == ' ') // check every single character those who equal to spaces 
+         {
+            count++;// Increment Operator 
+         }
+    }
+
+    cout << "The Space Count is = " << count << endl;// cout ===> print OR endl ====> New Line 
+
+    return 0;
+}
+
+/*
+
+aditya@aditya-Inspiron-15-3511:~/Daily_Code$ g++ 01_count.cpp
+aditya@aditya-Inspiron-15-3511:~/Daily_Code$ ./a.out 
+The Space Count is = 7
+aditya@aditya-Inspiron-15-3511:~/Daily_Code$ 
+
+*/
