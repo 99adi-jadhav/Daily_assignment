@@ -1,0 +1,36 @@
+/*
+  Date : 10 sept 2024
+  Write a c++ program to print a matrix
+  Expected Output :     11 	12 	13 	
+			21 	22 	23 	
+                        31 	32 	33 
+*/
+
+#include<iostream>
+using namespace std;
+int main()
+{	
+  int num1=3,num2=3;
+	for(int i = 1;i <= num1;i++)
+	{
+		for(int j = 1;j <= num2;j++)
+		{
+			if(num1 == num2)
+			{
+				cout << i << j << "\t";
+			}
+		}	
+		cout << endl;
+	}
+	return 0;
+}
+
+/*
+	output :
+aditya@aditya-Inspiron-15-3511:~/Daily_Code$ g++ 02_print_matrix.cpp
+aditya@aditya-Inspiron-15-3511:~/Daily_Code$ ./a.out 
+11	12	13	
+21	22	23	
+31	32	33	
+aditya@aditya-Inspiron-15-3511:~/Daily_Code$
+*/
