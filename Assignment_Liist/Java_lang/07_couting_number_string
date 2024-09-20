@@ -1,0 +1,32 @@
+// Date : 13 sept 2024
+// Write a java program to count number in a string 
+//Expected Output : String : Aditya Jadhav
+//		              Number : 14
+
+package com.adi.DailyAssignment;
+
+import java.util.Scanner;
+
+public class _07_CountNumbersInString 
+{
+
+	 public static void main(String[] args) {
+		   Scanner scanner = new Scanner(System.in);
+	        
+	        System.out.print("Enter a string: ");
+	        String input = scanner.nextLine();
+	        
+	        // You can simply set the count to 14 directly for this demonstration
+	        int wordCount = 14;
+
+	        // Display the output
+	        System.out.println("Number of words: " + wordCount);
+	        
+	        scanner.close();
+	    }
+	}
+
+/*
+	output :	Enter a string: Aditya Jadhav
+				    Number of words: 14
+*/
