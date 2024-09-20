@@ -1,0 +1,25 @@
+// Date : 9 sept 2024
+// Write a c++ program to count spaces of a string  
+//Expected Output : space is 7
+
+
+package com.adi.DailyAssignment;
+
+public class _01Count_space {
+
+    public static void main(String[] args) {
+        int count = 0;
+        String ch = "Hello sir,I Am A MSC Computer Science Student";
+        
+        for (int num = 0; num < ch.length(); num++) // Start from 0 it indicates H and 
+        											// [ ch.length()==> total count the length of string]
+        											// \0 ===> is not requried in java because of object Of the string
+        {
+            if (ch.charAt(num) == ' ') // charAt(num) ==> check every single character or == space remain same 
+            {
+                count++; // Increment count
+            }
+        }
+        System.out.println("The Space Count is : " + count);// Printing Statement
+    }
+}
