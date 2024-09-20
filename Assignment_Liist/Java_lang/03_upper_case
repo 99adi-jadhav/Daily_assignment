@@ -1,0 +1,39 @@
+/*
+  Date : 11 sept 2024
+  Write a java program lowercase convert into uppercase
+  Expected Output :     Original sentence: chatrapati shivaji maharaj 
+		                  	Uppercase sentence: CHATRAPATI SHIVAJI MAHARAJ 		
+*/
+
+
+package com.adi.DailyAssignment;
+
+public class _03_uppercase
+{
+
+	public static void main(String[] args) 
+	{
+		String str = "chatrapati shivaji maharaj";
+
+        System.out.println("\nOriginal sentence: " + str);
+
+        StringBuilder demo = new StringBuilder(str);//creating a new object initializes to str
+       
+        for (int i = 0; i < demo.length(); i++) 
+        {
+        	demo.setCharAt(i, Character.toUpperCase(demo.charAt(i))); // converts the character to uppercase
+        															  // setCharAt : Take single character
+        }
+
+        System.out.println("Uppercase sentence: " + demo.toString());
+	}
+
+}
+
+
+/*
+	output :
+			Original sentence: chatrapati shivaji maharaj
+			Uppercase sentence: CHATRAPATI SHIVAJI MAHARAJ
+	
+*/
