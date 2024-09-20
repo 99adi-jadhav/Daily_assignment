@@ -1,0 +1,33 @@
+/*
+ Date : 17 sept 2024
+Write a java program to accept a number from user and print the factorial of these number
+Expected Output : Enter a number : 5
+		              The factorial of 5 is: 120
+
+*/
+package com.adi.DailyAssignment;
+
+import java.util.Scanner;
+public class _11_factorial_number 
+{
+
+	public static void main(String[] args) 
+	{
+    Scanner scanner = new Scanner(System.in);
+    int factorial = 1;
+
+    System.out.print("Enter a number: ");
+    int num = scanner.nextInt();
+        for (int i = 1; i <= num; i++) {
+            factorial *= i;
+        }
+        System.out.println("The factorial of " + num + " is: " + factorial);
+    }
+}
+
+
+
+/*
+Output : Enter a number : 5
+		              The factorial of 5 is: 120
+*/
