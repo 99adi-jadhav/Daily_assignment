@@ -1,0 +1,31 @@
+/*
+ Date : 18 sept 2024
+ Write a java program to print addition of array elements
+ Expected output : The Addition of 1 to 10 Number is : 55
+
+*/
+package com.adi.DailyAssignment;
+
+public class _14_print_array_addition 
+{
+
+	public static void main(String[] args)
+	{
+			int[] arr = {1,2,3,4,5,6,7,8,9,10};
+			int add = 0;
+			
+			for(int i = 0; i <= 9;i++)
+			{
+				add = add + arr[i];
+			}
+			
+			System.out.println("The Addition of 1 to 10 Number is : " + add);
+
+	}
+
+}
+
+/*
+  output : The Addition of 1 to 10 Number is : 55
+*/
+          
