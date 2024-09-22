@@ -1,0 +1,32 @@
+/*
+ Date : 17 sept 2024
+Write a c program to reversed the given number 
+Expected Output : The Origanal Number Is : 23748 
+		              The Reversed Number is : 84732
+
+*/
+
+#include<stdio.h>
+int main()
+{
+	int num = 23748;
+	int rev = 0;
+	
+	printf("The Origanal Number Is : %d \n",num);
+	
+	while(num !=  0)
+	{
+		int remainder = num % 10;
+		rev = rev * 10 + remainder; 
+		num/= 10; 
+	}
+	   printf("The Reversed Number is : %d ",rev);
+
+	return 0;
+}
+
+
+/*
+	output : The Origanal Number Is : 23748 
+		       The Reversed Number is : 84732
+*/ 
