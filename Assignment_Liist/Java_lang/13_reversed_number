@@ -1,0 +1,32 @@
+/*
+ Date : 17 sept 2024
+Write a c++ program to reversed the given number 
+Expected Output : The Orignal Number is : 536372
+		              The reversed Number is : 273635
+*/
+package com.adi.DailyAssignment;
+
+public class _13_reversed_number
+{
+
+	public static void main(String[] args)
+	{
+		int num = 938493;
+		int rev = 0;
+		
+		System.out.println("The Orignal Number is : " + num);
+		
+		while(num != 0)
+		{
+			int remainder = num % 10;
+			rev = rev * 10 + remainder;
+			num /= 10;
+		}
+		System.out.println("The Reversed Number is : " + rev);
+	}
+}
+
+/*
+	output : The Orignal Number is : 938493
+			     The Reversed Number is : 394839
+*/
