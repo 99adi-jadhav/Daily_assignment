@@ -1,0 +1,35 @@
+/*
+ Date : 17 sept 2024
+Write a c++ program to reversed the given number 
+Expected Output : The Orignal Number is : 536372
+		              The reversed Number is : 273635
+*/
+
+#include<iostream>
+using namespace std;
+int main()
+{
+	int num = 536372;
+	int rev = 0;
+	
+	cout << "The Orignal Number is : " << num << endl;
+	while(num != 0)
+	
+	{
+		int Remainder = num % 10;
+		rev = rev * 10 + Remainder;
+		num /= 10;
+	}
+	
+	cout << "The reversed Number is : "  << rev << endl;
+	
+	return 0;
+
+}
+
+
+/*
+	output : The Orignal Number is : 536372
+	      	 The reversed Number is : 273635
+
+*/ 
