@@ -1,0 +1,39 @@
+/*
+ Date : 22 sept 2024
+ Write a c++ program to check number is even or not
+ Expected output : The number is Even
+*/
+
+package com.adi.DailyAssignment;
+
+import java.util.Scanner;
+
+public class _18_Even_Number
+{
+
+	public static void main(String[] args) 
+	{
+        Scanner scanner = new Scanner(System.in);
+
+
+        System.out.print("Enter Any Number: ");
+        int num = scanner.nextInt();
+
+        if (num % 2 == 0)
+        {
+            System.out.println("The number is Even");
+        } 
+        else 
+        {
+            System.out.println("The number is Not Even"); 
+        }
+	}
+
+}
+
+
+
+/*
+	output :  The number is Even
+
+*/
