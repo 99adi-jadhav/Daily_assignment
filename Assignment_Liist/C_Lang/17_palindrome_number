@@ -1,0 +1,46 @@
+/*
+ Date : 21 sept 2024
+ Write a c program to identify the number is palindrome or not 
+ Expected output : 	The Number is Palindrome 
+*/
+
+#include<stdio.h>
+int main()
+{
+	int num = 76867;
+	int reversed = 0;
+
+	
+	printf("Orignal Number is : %d \n\n",num);
+	
+	int orignal_num = num;
+	
+	while (num != 0)
+	{
+		int remainder = num % 10;
+		reversed = reversed * 10 + remainder;
+		num /= 10;
+	}	
+	printf("The Reversed Number is : %d\n\n",reversed);
+
+	if(orignal_num == reversed)
+	{
+		printf("The Number is Palindrome \n");
+	}
+	else
+	{
+		printf("The Number is Not Palindrome\n");
+	}
+	
+	return 0;
+}
+
+
+/*
+	output :  Orignal Number is : 76867 
+
+		  The Reversed Number is : 76867
+
+		  The Number is Palindrome 
+
+*/
