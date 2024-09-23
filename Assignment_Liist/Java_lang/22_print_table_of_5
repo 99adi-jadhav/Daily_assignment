@@ -1,0 +1,47 @@
+/*
+ Date : 22 sept 2024
+ Write a c++ program to print table of 5
+ Expected output : Table of 5 is: 
+			5
+			10
+			15
+			20
+			25
+			30
+			35
+			40
+			45
+			50
+*/
+package com.adi.DailyAssignment;
+
+public class _22_print_table_of_5
+{
+
+	public static void main(String[] args)
+	{
+        int num = 5;
+
+        System.out.println("Table of " + num + " is : ");
+
+        for (int i = 1; i <= 10; ++i)
+        {
+            System.out.println(num * i);
+        }
+	}
+	
+}
+
+/*
+	output : Table of 5 is: 
+		5
+		10
+		15
+		20
+		25
+		30
+		35
+		40
+		45
+		50
+*/
