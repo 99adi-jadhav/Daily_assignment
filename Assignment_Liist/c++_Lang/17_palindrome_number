@@ -1,0 +1,48 @@
+/*
+ Date : 21 sept 2024
+ Write a c++ program to identify the number is palindrome or not 
+ Expected output : 	The Number is Palindrome 
+
+*/
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int num = 76867;
+	int reversed = 0;
+
+	
+	cout << "Orignal Number is : " << num << endl;
+	
+	int orignal_num = num;
+	
+	while (num != 0)
+	{
+		int remainder = num % 10;
+		reversed = reversed * 10 + remainder;
+		num /= 10;
+	}	
+	cout << "The Reversed Number is : " << reversed << endl;
+
+	if(orignal_num == reversed)
+	{
+		cout << "The Number is Palindrome ";
+	}
+	else
+	{
+		cout << "terThe Number is Not Palindrome";
+	}
+	return 0;
+}
+
+
+/*
+	output :  Orignal Number is : 76867 
+
+		  The Reversed Number is : 76867
+
+		  The Number is Palindrome 
+
+*/
