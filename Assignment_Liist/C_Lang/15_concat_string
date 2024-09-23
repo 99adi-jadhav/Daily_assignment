@@ -1,11 +1,10 @@
 /*
  Date : 19 sept 2024
- Write a c++ program to Concatenate a string
+ Write a c program to Concatenate a string
  Expected output : Hello....Welcome to C Programming
 */
-#include<iostream>
-#include<cstring>
-using namespace std;	
+#include<stdio.h>
+#include<string.h>
 int main()
 {
 	char str1[20] = "Hello....";
@@ -13,11 +12,11 @@ int main()
 	
 	strcat(str1,str2);
 	
-	cout << str1 << endl;
+	printf("%s\n",str1);
 	return 0 ;
 }
 
 
 /*
 	output : Hello....Welcome to C Programming
-*/
+/*
