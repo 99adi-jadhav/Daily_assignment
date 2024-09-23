@@ -1,0 +1,21 @@
+/*
+ Date : 20 sept 2024
+ Write a c program to use strlen function
+ Expected output : 14
+*/
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+int main()
+ {
+    char str[] = "Hello I'm Adii";
+
+    cout << strlen(str) << endl;
+    return 0;
+ }
+
+
+/*
+	output : 14
+*/
