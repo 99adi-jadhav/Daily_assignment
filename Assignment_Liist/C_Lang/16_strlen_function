@@ -1,0 +1,19 @@
+/*
+ Date : 20 sept 2024
+ Write a c program to use strlen function
+ Expected output : 14
+*/
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char str[] = "Hello I'm Adii";
+	
+	printf("%ld",strlen(str));
+	return 0 ;
+}
+
+
+/*
+	output : 14
+*/
