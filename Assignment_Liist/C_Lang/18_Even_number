@@ -1,0 +1,30 @@
+/*
+ Date : 22 sept 2024
+ Write a c program to check number is even or not
+ Expected output : The number is Even
+*/
+#include<stdio.h>
+int main()
+{
+	int num;
+	
+	printf("Enter Any Number : ");
+	scanf("%d",&num);
+	
+	if(num % 2 == 0)
+	{
+		printf("The number is Even");
+	}
+	else
+	{
+		printf("The number is not Even");
+	}
+	return 0;
+}
+
+
+
+/*
+	output :  The number is Even
+
+*/
