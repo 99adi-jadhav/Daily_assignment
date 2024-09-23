@@ -1,0 +1,48 @@
+/*
+ Date : 22 sept 2024
+ Write a c program to print table of 29
+ Expected output : Table of 29 : 
+			29 
+			58 
+			87 
+			116 
+			145 
+			174 
+			203 
+			232 
+			261 
+			290 
+*/
+
+#include <iostream>
+
+using namespace std;
+
+int main() 
+{
+    int num = 29;
+
+    cout << "Table of " << num << "is : " << endl;
+
+    for(int i = 1; i <= 10;++i) 
+    {
+        cout << num * i << endl;
+    }
+
+    return 0;
+}
+
+
+/*
+	output : Table of 29 : 
+			29 
+			58 
+			87 
+			116 
+			145 
+			174 
+			203 
+			232 
+			261 
+			290 
+*/
