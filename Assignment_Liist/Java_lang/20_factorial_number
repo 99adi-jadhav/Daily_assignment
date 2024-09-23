@@ -1,0 +1,36 @@
+/*
+ Date : 22 sept 2024
+ Write a java program to print factorial Number 
+ Expected output : Factorial of 5 = 120
+*/
+package com.adi.DailyAssignment;
+import java.util.Scanner;
+
+public class _20_factorial_number 
+{
+
+	public static void main(String[] args) 
+	{
+		Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Enter a number: ");
+        int num = scanner.nextInt();
+        
+        int factorial = 1;
+        for (int i = 1; i <= num; i++) 
+        {
+            factorial *= i;
+        }
+
+        System.out.println("Factorial of " + num + " = " + factorial);
+        
+        scanner.close();
+	}
+
+}
+
+
+/*
+	output :  Factorial of 5 = 120
+
+*/
