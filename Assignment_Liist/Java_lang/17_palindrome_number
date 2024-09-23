@@ -1,0 +1,51 @@
+/*
+ Date : 21 sept 2024
+ Write a c++ program to identify the number is palindrome or not 
+ Expected output : The Number is Palindrome 
+
+*/
+
+package com.adi.DailyAssignment;
+
+public class _17_palindrome_number 
+{
+
+	public static void main(String[] args) 
+	{
+		int num = 76867;
+        int reversed = 0;
+
+        System.out.println("Original Number is: " + num);
+
+        int originalNum = num;
+
+        while (num != 0) {
+            int remainder = num % 10;
+            reversed = reversed * 10 + remainder;
+            num /= 10;
+        }
+
+        System.out.println("The Reversed Number is: " + reversed);
+
+        if (originalNum == reversed) 
+        {
+            System.out.println("The Number is Palindrome");
+        } else 
+        {
+            System.out.println("The Number is Not Palindrome");
+        }
+    }
+
+}
+
+
+
+
+/*
+	output :  Orignal Number is : 76867 
+
+		  The Reversed Number is : 76867
+
+		  The Number is Palindrome 
+
+*/
