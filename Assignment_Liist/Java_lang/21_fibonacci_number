@@ -1,0 +1,38 @@
+/*
+ Date : 22 sept 2024
+ Write a java program to print Fibonacci Series
+ Expected output : Fibonacci Series 5 is :
+	       	   0 1 1 2 3 
+*/
+
+package com.adi.DailyAssignment;
+
+public class _21_fibonacci_series 
+{
+
+	public static void main(String[] args) 
+	{
+		 int n = 5; 
+	        int firstTerm = 0, secondTerm = 1;
+
+	        System.out.println("Fibonacci Series up to " + n + " terms:");
+
+	        for (int i = 1; i <= n; ++i) 
+	        {
+	        	
+	            System.out.print(firstTerm + " ");
+
+	           int nextTerm = firstTerm + secondTerm;
+	            firstTerm = secondTerm;
+	            secondTerm = nextTerm;
+	        }
+	}
+
+}
+
+/* 
+
+	output : Fibonacci Series 5 is :
+		 0 1 1 2 3 
+
+*/
