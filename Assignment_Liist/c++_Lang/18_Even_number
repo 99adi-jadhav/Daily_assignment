@@ -1,0 +1,32 @@
+/*
+ Date : 22 sept 2024
+ Write a c++ program to check number is even or not
+ Expected output : The number is Even
+*/
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int num;
+	
+	cout << "Enter Any Number : ";
+	cin >> num;
+	
+	if(num % 2 == 0)
+	{
+		cout << "The number is Even" << endl;
+	}
+	else
+	{
+		cout << "The number is not Even" << endl;
+	}
+	return 0;
+}
+
+
+
+/*
+	output :  The number is Even
+
+*/
