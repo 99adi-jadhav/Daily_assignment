@@ -1,0 +1,48 @@
+/*
+ Date : 22 sept 2024
+ Write a c++ program to print table of 5
+ Expected output : Table of 5 is: 
+			5
+			10
+			15
+			20
+			25
+			30
+			35
+			40
+			45
+			50
+*/
+
+#include <iostream>
+
+using namespace std;
+
+int main() 
+{
+    int num = 5;
+
+    cout << "Table of " << num << "is : " << endl;
+
+    for (int i = 1; i <= 10; ++i) 
+    {
+        cout << num * i << endl;
+    }
+
+    return 0;
+}
+
+
+/*
+	output : Table of 5 is: 
+		5
+		10
+		15
+		20
+		25
+		30
+		35
+		40
+		45
+		50
+*/
