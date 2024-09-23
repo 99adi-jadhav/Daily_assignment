@@ -1,0 +1,23 @@
+/*
+ Date : 20 sept 2024
+ Write a c program to use strlen function
+ Expected output : 13
+*/
+package com.adi.DailyAssignment;
+
+public class _16_strlen_funtion
+{
+
+	public static void main(String[] args)
+	{
+		String str = "Aditya Jadhav";
+		System.out.println(str.length());
+		
+	}
+
+}
+
+
+/*
+	output : 13
+*/
