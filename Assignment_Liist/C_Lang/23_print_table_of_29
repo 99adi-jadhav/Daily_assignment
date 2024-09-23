@@ -1,0 +1,47 @@
+/*
+ Date : 22 sept 2024
+ Write a c program to print table of 29
+ Expected output : Table of 29 : 
+			29 
+			58 
+			87 
+			116 
+			145 
+			174 
+			203 
+			232 
+			261 
+			290 
+*/
+
+
+#include <stdio.h>
+
+int main() 
+{
+    int num = 29;
+
+    printf("Table of %d : \n",num);
+
+    for(int i = 1; i <= 10; ++i) 
+    {
+        printf("%d \n",num * i);
+    }
+
+    return 0;
+}
+
+
+/*
+	output : Table of 29 : 
+			29 
+			58 
+			87 
+			116 
+			145 
+			174 
+			203 
+			232 
+			261 
+			290 
+*/
