@@ -1,0 +1,23 @@
+/*
+ Date : 19 sept 2024
+ Write a c++ program to Concatenate a string
+ Expected output : Hello....Welcome to C Programming
+*/
+#include<iostream>
+#include<cstring>
+using namespace std;	
+int main()
+{
+	char str1[20] = "Hello....";
+	char str2[] = "Welcome to C Programming";
+	
+	strcat(str1,str2);
+	
+	cout << str1 << endl;
+	return 0 ;
+}
+
+
+/*
+	output : Hello....Welcome to C Programming
+*/
