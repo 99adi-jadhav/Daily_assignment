@@ -1,0 +1,28 @@
+/*
+ Date : 19 sept 2024
+ Write a java program to Concatenate a string
+ Expected output : Hello....Welcome to C Programming
+*/
+
+package com.adi.DailyAssignment;
+
+public class _15_concatenation_string 
+{
+
+	public static void main(String[] args)
+	{
+		String str1 = "Hello....";
+		String str2 = "Welcome to C Programming";
+		
+		String str3 = str1 + str2;
+		 
+		System.out.println(str3);
+	}
+
+}
+
+
+
+/*
+	output : Hello....Welcome to C Programming
+*/
