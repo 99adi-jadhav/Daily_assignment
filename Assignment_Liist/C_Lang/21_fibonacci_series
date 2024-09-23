@@ -1,0 +1,38 @@
+/*
+ Date : 22 sept 2024
+ Write a c program to print Fibonacci Series
+ Expected output : Fibonacci Series 5 is :
+	       	   0 1 1 2 3 
+*/
+
+
+
+#include <stdio.h>
+
+int main() 
+{
+    int num = 5; 
+    int firstterm = 0, secondterm = 1;
+
+    printf("Fibonacci Series %d is  :\n",num);
+
+    for (int i = 1; i <= num; ++i) 
+    {
+        printf("%d ", firstterm);
+
+        int nextTerm = firstterm + secondterm;
+        firstterm = secondterm;
+        secondterm = nextTerm;
+    }
+
+    printf("\n");
+    return 0;
+}
+
+
+/* 
+
+	output : Fibonacci Series 5 is :
+		 0 1 1 2 3 
+
+*/
