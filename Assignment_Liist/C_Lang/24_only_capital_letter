@@ -1,0 +1,35 @@
+/*
+  Date : 30 sept 2024
+  Write a c program to print String only letters which are capital
+  Expected Output :     Original sentence: Chatrapati Shivaji Maharaj
+			                  Uppercase Letters: C S M
+
+  			
+*/
+
+#include <stdio.h>
+#include <ctype.h>
+
+int main() {
+    char str[] = "Chatrapati Shivaji Maharaj";
+
+    printf("\nOriginal sentence: %s \n\n", str);
+
+    printf("Uppercase Letters: ");
+    for (int i = 0; str[i] != '\0'; i++) {
+        if (isupper(str[i])) {
+            printf("%c", str[i]);
+        }
+    }
+    printf("\n");
+
+    return 0;
+}
+
+
+/*
+	Output :
+			Original sentence: chatrapati shivaji maharaj 
+
+			Uppercase Letters: C S M
+*/
