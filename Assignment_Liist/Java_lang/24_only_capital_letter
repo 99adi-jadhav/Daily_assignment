@@ -1,1 +1,39 @@
+/*
+  Date : 30 sept 2024
+  Write a java program to print String only letters which are capital
+  Expected Output :     Original sentence: Chatrapati Shivaji Maharaj
+			Uppercase Letters: CSM
 
+  			
+*/
+
+package com.adi.DailyAssignment;
+
+public class _24_print_only_capital_letter 
+{
+
+	public static void main(String[] args) 
+	{
+		String str = "Chatrapati Shivaji Maharaj";
+
+        System.out.println("\nOriginal sentence: " + str);
+
+        System.out.print("Uppercase Letters: ");
+        for (int i = 0; i < str.length(); i++) 
+        {
+            if (Character.isUpperCase(str.charAt(i))) 
+            {
+                System.out.print(str.charAt(i));
+            }
+        }
+	}
+
+}
+
+
+
+/*
+	Output :
+			Original sentence: chatrapati shivaji maharaj 
+			Uppercase Letters: CSM
+*/
