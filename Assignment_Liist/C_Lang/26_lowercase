@@ -1,0 +1,36 @@
+/*
+  Date : 2 october 2024
+  Write a c program to print String in lower case
+  Expected Output :     Original sentence: Chatrapati Shivaji Maharaj
+		                  	lowercase Letters: hatrapati hivaji aharaj
+
+  			
+*/
+
+#include <stdio.h>
+#include <ctype.h>
+
+int main() 
+{
+    char str[] = "CHATRAPATI SHIVAJI MAHARAJ";
+
+    printf("\nOriginal sentence: %s\n", str);
+
+    printf("\nLowercase sentence: ");
+    for (int i = 0; str[i] != '\0'; i++)
+     {
+        char ch = tolower(str[i]);
+        printf("%c", ch);
+    }
+    printf("\n");
+
+    return 0;
+}
+
+
+
+/*
+	Output :
+			Original sentence: CHATRAPATI SHIVAJI MAHARAJ
+			Lowercase Sentence : chatrapati shivaji maharaj
+*/
