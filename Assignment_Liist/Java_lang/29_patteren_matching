@@ -1,1 +1,63 @@
+/*
+  Date : 3 october 2024
+  Write a java program to print following Patteren
+  Expected Output :     ****
+                  			***
+                  			**
+                  			***
+                  			**
+                  			*
+                  			**
+                  			*
+*/
 
+package com.adi.DailyAssignment;
+
+public class _29__Patteren_matching 
+{
+
+	public static void main(String[] args)
+	{
+		for (int i = 4; i > 1; i--) 
+		{
+            for (int j = 0; j < i; j++) 
+            {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        
+        for (int i = 3; i > 0; i--) 
+        {
+            for (int j = 0; j < i; j++)
+            {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        
+        for (int i = 2; i > 0; i--) 
+        {
+            for (int j = 0; j < i; j++) 
+            {
+                System.out.print("*");
+            }
+            System.out.println(); 
+        }
+	}
+
+}
+
+
+
+/*
+	Output :
+			****
+			***
+			**
+			***
+			**
+			*
+			**
+			*
+*/
