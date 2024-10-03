@@ -1,0 +1,31 @@
+/*
+  Date : 3 october 2024
+  Write a c program Check given number is prime number 
+  Expected Output :    Number is : 19
+  	                   Given Number is Prime Number
+*/
+#include <stdio.h>
+
+int main() 
+{
+    int num = 1;
+    printf("Number is : %d",num);
+    
+    if(num % 2 == 1)
+    {
+	printf("\n\nGiven Number is Prime Number\n\n");
+    } 
+    else
+    {
+	printf("\n\nGiven Number is Not Prime Number\n\n");    
+    }
+    return 0;
+}
+
+
+
+/*
+	Output :
+	              		 Number is : 19
+  	                 Given Number is Prime Number
+*/
