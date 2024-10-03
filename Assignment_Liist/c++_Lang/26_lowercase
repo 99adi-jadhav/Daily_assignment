@@ -1,0 +1,37 @@
+/*
+  Date : 2 october 2024
+  Write a c++ program to print String in lower case
+  Expected Output :    Original sentence: CHATRAPATI SHIVAJI MAHARAJ
+		                   Lowercase Sentence : chatrapati shivaji maharaj
+
+  			
+*/
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() 
+{
+    char str[] = "CHATRAPATI SHIVAJI MAHARAJ";
+
+    cout << "Original sentence: " << str << endl;
+
+    cout << "Lowercase sentence: ";
+    for (int i = 0; str[i] != '\0'; i++)
+     {
+        char ch = tolower(str[i]);
+        cout << ch;
+    }
+    cout << endl;
+
+    return 0;
+}
+
+
+
+/*
+	Output :
+			Original sentence: CHATRAPATI SHIVAJI MAHARAJ
+			Lowercase Sentence : chatrapati shivaji maharaj
+*/
