@@ -1,0 +1,46 @@
+/*
+  Date : 30 sept 2024
+  Write a c++ program to print String only letters which are in lower case
+  Expected Output :     Original sentence: Chatrapati Shivaji Maharaj
+		                  	lowercase Letters: hatrapati hivaji aharaj
+
+  			
+*/
+
+#include <iostream>
+#include <ctype.h>
+
+using namespace std;
+
+int main() 
+{
+    char str[] = "Chatrapati Shivaji Maharaj";
+
+    cout << "\nOriginal sentence: " << str << endl;
+
+    cout << "Lowercasecase Letters: ";
+    for (int i = 0; str[i] != '\0'; i++) 
+    {
+        if (islower(str[i])) 
+        {
+            cout << str[i];
+        }
+    }
+    cout << endl;
+
+    return 0;
+}
+
+
+
+
+
+/*
+	Output :
+			Original sentence: Chatrapati Shivaji Maharaj 
+			Lowercasecase Letters: hatrapati hivaji aharaj
+*/
+	Output :
+			Original sentence: Chatrapati Shivaji Maharaj 
+			Lowercasecase Letters: hatrapati hivaji aharaj
+*/
