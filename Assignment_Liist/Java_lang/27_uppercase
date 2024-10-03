@@ -1,1 +1,28 @@
+/*
+  Date : 3 october 2024
+  Write a java program to print String in Uppercase
+  Expected Output :    Original sentence: chatrapati shivaji maharaj
+            		       Uppercase Sentence :  CHATRAPATI SHIVAJI MAHARAJ
 
+  			
+*/
+package com.adi.DailyAssignment;
+
+public class _27_print_uppercase {
+
+    public static void main(String[] args) {
+        String str = "chatrapati shivaji maharaj";
+
+        System.out.println("Original sentence: " + str);
+
+        String uppercaseStr = str.toUpperCase();
+        System.out.println("Uppercase sentence: " + uppercaseStr);
+    }
+}
+
+/*
+	Output :
+		      	 Original sentence: chatrapati shivaji maharaj
+		         Uppercase Sentence :  CHATRAPATI SHIVAJI MAHARAJ
+
+*/
