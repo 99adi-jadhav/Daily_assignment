@@ -1,0 +1,63 @@
+/*
+  Date : 3 october 2024
+  Write a c program to print following Patteren
+  Expected Output :     ****
+                  			***
+                  			**
+                  			***
+                  			**
+                  			*
+                  			**
+                  			*
+*/
+
+#include <stdio.h>
+
+int main() 
+{
+	
+	for(int i = 4; i > 1 ; i--)
+	{
+		for(int j = 0;j < i;j++)
+	{
+		printf("*");
+	}
+	printf("\n");
+	}
+	
+	
+ 	 for (int i = 3; i > 0; i--) 
+ 	 { 
+   	     for (int j = 0; j < i; j++) 
+    		    { 
+      		      printf("*");
+     		   }
+     	   printf("\n"); 
+    	}
+	
+	
+	   for (int i = 2; i > 0; i--)
+	    { 
+        	for (int j = 0; j < i; j++) 
+       		 { 
+         	   printf("*");
+       		 }
+       		 printf("\n");
+   	   }
+	
+    return 0;
+}
+
+
+
+/*
+	Output :
+			****
+			***
+			**
+			***
+			**
+			*
+			**
+			*
+*/
