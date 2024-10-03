@@ -1,1 +1,32 @@
+/*
+  Date : 2 october 2024
+  Write a java program to print String in lower case
+  Expected Output :    Original sentence: CHATRAPATI SHIVAJI MAHARAJ
+		                   Lowercase Sentence : chatrapati shivaji maharaj
 
+  			
+*/
+
+package com.adi.DailyAssignment;
+
+
+public class _26_print_lowercase
+{
+
+    public static void main(String[] args) 
+    {
+        String str = "CHATRAPATI SHIVAJI MAHARAJ";
+
+        System.out.println("\nOriginal sentence: " + str);
+
+        String lowercaseStr = str.toLowerCase();
+        System.out.println("LowerCase sentence: " + lowercaseStr);
+     }
+ }
+
+
+/*
+	Output :
+			Original sentence: CHATRAPATI SHIVAJI MAHARAJ
+			Lowercase Sentence : chatrapati shivaji maharaj
+*/
