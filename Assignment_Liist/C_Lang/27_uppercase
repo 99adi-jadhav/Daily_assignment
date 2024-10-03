@@ -1,0 +1,35 @@
+/*
+  Date : 3 october 2024
+  Write a c program to print String in Uppercase
+  Expected Output :    Original sentence: chatrapati shivaji maharaj
+		                   Uppercase Sentence :  CHATRAPATI SHIVAJI MAHARAJ
+
+  			
+*/
+#include <stdio.h>
+#include <ctype.h>
+
+int main() 
+{
+    char str[] = "chatrapati shivaji maharaj";
+
+    printf("\nOriginal sentence: %s\n", str);
+
+    printf("\nUppercase sentence: ");
+    for (int i = 0; str[i] != '\0'; i++)
+     {
+        char ch = toupper(str[i]);
+        printf("%c", ch);
+    }
+    printf("\n");
+
+    return 0;
+}
+
+
+
+/*
+	Output :
+			Original sentence: CHATRAPATI SHIVAJI MAHARAJ
+			Lowercase Sentence : chatrapati shivaji maharaj
+*/
