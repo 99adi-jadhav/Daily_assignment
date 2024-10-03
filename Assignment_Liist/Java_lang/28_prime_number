@@ -1,1 +1,39 @@
+/*
+  Date : 3 october 2024
+  Write a java program Check given number is prime number 
+  Expected Output :    Number is : 19
+  	                   Given Number is Prime Number
+*/
 
+
+package com.adi.DailyAssignment;
+
+public class _28_primeNumber 
+{
+
+	public static void main(String[] args)
+	{
+		int num = 19; 
+		  
+		  if(num % 2 == 0 )
+		  {
+			   
+			   System.out.println("Number is not prime");
+			  
+		  }
+		  else {
+			  
+			  System.out.println("Number is  prime");
+			  
+		  }
+	}
+
+}
+
+
+
+/*
+	Output :
+			 Number is : 19
+  	                 Given Number is Prime Number
+*/
